@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "id": 11,
+      "nome": "Fulano",
+      "cpf": "66414919004",
+      "email": "fulano@gmail.com",
+      "valor": 11000.0,
+      "parcelas": 3,
+      "seguro": true
+    }
+  ],
+  "required": [
+    "id",
+    "nome",
+    "cpf",
+    "email",
+    "valor",
+    "parcelas",
+    "seguro"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The id schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        11
+      ]
+    },
+    "nome": {
+      "$id": "#/properties/nome",
+      "type": "string",
+      "title": "The nome schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Fulano"
+      ]
+    },
+    "cpf": {
+      "$id": "#/properties/cpf",
+      "type": "string",
+      "title": "The cpf schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "66414919004"
+      ]
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "type": "string",
+      "title": "The email schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "fulano@gmail.com"
+      ]
+    },
+    "valor": {
+      "$id": "#/properties/valor",
+      "type": "number",
+      "title": "The valor schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0.0,
+      "examples": [
+        11000.0
+      ]
+    },
+    "parcelas": {
+      "$id": "#/properties/parcelas",
+      "type": "integer",
+      "title": "The parcelas schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        3
+      ]
+    },
+    "seguro": {
+      "$id": "#/properties/seguro",
+      "type": "boolean",
+      "title": "The seguro schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    }
+  },
+  "additionalProperties": true
+}
