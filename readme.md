@@ -24,7 +24,7 @@ Verificar a Instalação
 allure --version
 ```
 
-####Executar o Allure
+#### Executar o Allure
 Após a execusão dos tests execute o seguinte comando
 ```bash
 allure serve target/surefire-reports
